@@ -3,11 +3,38 @@ Phase2 Assignment 9 - T3D algorithm
 
 # T3D Algorithm
 
-I will explain step by step of T3D algorithm. 
+T3D  is an Deep Reinforcment Learning algorithm which concurrently learns a Q-function and a policy. 
+It uses Actor Critic approach where Actor function specifies action given the
+current state of the environments. Critic value function specifies a signal (TD
+Error) to criticize the actions made by the actor.
+
+T3D uses experience replay where experience tuples (S,A,R,S`) are added to
+replay buffer and are randomly sampled from the replay buffer so that samples
+are not correlated.
+
+T3D also uses separate target neural network for both Actor and Critic. As
+target values are determined for both the critic and actor networks, copy of both
+of these networks and soft update their weights are periodically updated to the
+respective target networks.
+
+There are six neural networks used in T3D
+i. Local network for Actor
+ii. Target network for Actor
+iii. Two network for Critic
+iv. Two Target network for Critic
+
+Also, this algorithm uses time delay for updating Actor after a certain number of iterations. Also, Target Actor and Critic networks are updated periodically after certain number of iterations using Polyak averaging.
+
+I will draw an analogy with an real world exmaple. 
+
+Let u
+
+
 
 ![Kid Learning walk](/kid_learning_walking_from_parents.jfif)
 
 
+Step by step of T3D algorithm. 
 
 ## Step0: Initialization
 
