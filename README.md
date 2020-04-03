@@ -27,4 +27,13 @@ Target Actor model is neural network which is similar to Actor model but it is u
 Worflow for Actor forward is as below:
 ![Actor Model](/Actor.forward.png)
 
+## Step2: Define Critic Model
+
+The role of Critic is predict Q value based on state and action. It is based on value function.
+
+There are two critic neural networks and two critic target neural networks which are updated slower than the critic models
+
+![Critic Model](/Critic.forward.png)
+
+
 
