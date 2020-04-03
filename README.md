@@ -5,6 +5,10 @@ Phase2 Assignment 9 - T3D algorithm
 
 I will explain step by step of T3D algorithm. 
 
+![Kid Learning walk](/kid_learning_walking_from_parents.jfif)
+
+
+
 ## Step0: Initialization
 
 I this step all the modules are initialized
@@ -51,6 +55,21 @@ Flowchart for Init method of T3D is as below:
 train method of T3D class is used for trainig T3D algorithm. This is the main method for training
 Flowchart for train method of T3D is as below:
 ![T3D train](/T3D.Train.png)
+
+## Step4: Sample from Replay Buffer
+
+In this step a list of transtions of lenght batch size are randomly selected from experience replay and are converted to tensor
+
+
+## Step5: 
+Using the actor target network, given a  next state s', next action a' is determined
+
+
+## Step6: 
+Gaussian noise is added to next action a'.
+
+We add Gaussian noise to this next action a' and we clamp it in a range
+of values supported by the environment
 
 
 
