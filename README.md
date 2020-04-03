@@ -13,9 +13,18 @@ I this step all the modules are initialized
 
 Experience replay is a buffer for storing transitions. In this step a set of transitions of tuple (State, Action, Reward, Next action) are created and populated. 
 
-Experience Raply has two method:
+Experience Replay has two method:
 i. add: This method is used for adding transition to the Replay Buffer 
 ![ReplayBuffer Add](/ReplayBuffer.add.png)
 ii. Sample : This method is used randomly selecting as a list of transition of batch size
 ![ReplayBuffer sample](/ReplayBuffer.sample.png)
+
+## Step2: Define Actor Model
+
+Actor model is a neural network which takes input as state and outputs the action
+Target Actor model is neural network which is similar to Actor model but it is updated less frequently and mainly used for stability
+
+Worflow for Actor forward is as below:
+![Actor Model](/Actor.forward.png)
+
 
