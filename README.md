@@ -66,10 +66,17 @@ Using the actor target network, given a  next state s', next action a' is determ
 
 
 ## Step6: 
-Gaussian noise is added to next action a'.
+Adding adaptive noise to the parameters of reinforcement learning algorithms in general boosts performance.
+In this steo Gaussian noise is added to next action a' and clamp betwen negative and positive value of maxmium action values.
 
-We add Gaussian noise to this next action a' and we clamp it in a range
-of values supported by the environment
+## Step7: 
+Adding adaptive noise to the parameters of reinforcement learning algorithms in general boosts performance.
+In this step Gaussian noise is added to next action a' and clamp betwen negative and positive value of maxmium action values.
+
+## Step8: 
+In this step, two critic networks take the next state and next action as input and return Q balues for target1 and target2
+
+
 
 
 
