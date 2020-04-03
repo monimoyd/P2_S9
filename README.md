@@ -39,7 +39,15 @@ There are two critic neural networks and two critic target neural networks which
 
 T3D is the main class which performs T3D algorithm 
 
+init method is used for initializing actor, target actor, critic1, critic2, critic1 target, critic2 taret.
+Flowchart for Init method of T3D is as below:
 ![T3D class](/T3D.init.png)
+
+train method of T3D class is used for trainig T3D algorithm. This is the main method for training
+Flowchart for train method of T3D is as below:
+![T3D train](/T3D.Train.png)
+
+
 
 
 
