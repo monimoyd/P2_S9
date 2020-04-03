@@ -27,11 +27,14 @@ Also, this algorithm uses time delay for updating Actor after a certain number o
 
 I will draw an analogy with an real world exmaple. 
 
-Let u
-
-
+Let us say an child is trying to learn walking by and his parents are helping him to learn by giving feedback like clapping every time he is successfully standup.
 
 ![Kid Learning walk](/kid_learning_walking_from_parents.jfif)
+
+Here 
+
+Actor is the child who is learning to walking by looking his condition and the environment.
+
 
 
 Step by step of T3D algorithm. 
