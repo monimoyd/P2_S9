@@ -35,6 +35,11 @@ There are two critic neural networks and two critic target neural networks which
 
 ![Critic Model](/Critic.forward.png)
 
+Method Q1 of Critic takes state and action as input and updates the Q value
+
+The flowchart for Q1 is as below:
+![Critic Q1](/Critic.Q1.png)
+
 ## Step4 -Step 15
 
 T3D is the main class which performs T3D algorithm 
