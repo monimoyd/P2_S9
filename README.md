@@ -14,10 +14,11 @@ I this step all the modules are initialized
 Experience replay is a buffer for storing transitions. In this step a set of transitions of tuple (State, Action, Reward, Next action) are created and populated. 
 
 Experience Raply has two method:
-i. Add 
-Flowchart for add is as:
+i. add: This method is used for adding transition to the Replay Buffer 
 
 ![ReplayBuffer Add](/ReplayBuffer.add.png)
 
-ii. Sample
+ii. Sample : This method is used randomly selecting as a list of transition of batch size
+
+![ReplayBuffer sample](/ReplayBuffer.sample.png)
 
