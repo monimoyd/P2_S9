@@ -44,7 +44,7 @@ Critic targets are the permanent learnings by parent.
 
 Actor (child) gets positive rewards from environment (like chocolates or thumbs up from parent) and negative reward when he fell down and gets pain
 
-![Kid learning ](/thumbs_up.jfif.jfif)
+![Kid learning ](/thumbs_up.jfif)
 
 
 
