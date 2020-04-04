@@ -1,6 +1,8 @@
 # P2_S9
 Phase2 Assignment 9 - T3D algorithm
 
+Note: T3D.ipynb in the repository is the Jupyter Notebook in Google Collab for the given code
+
 # T3D Algorithm
 
 T3D (Twin Delayed Deep Deterministic Policy Gradient Algorithm)  is an Deep Reinforcment Learning algorithm which concurrently learns a Q-function and a policy. It uses Actor Critic approach where Actor function specifies action given the
