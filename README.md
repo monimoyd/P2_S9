@@ -3,8 +3,7 @@ Phase2 Assignment 9 - T3D algorithm
 
 # T3D Algorithm
 
-T3D  is an Deep Reinforcment Learning algorithm which concurrently learns a Q-function and a policy. 
-It uses Actor Critic approach where Actor function specifies action given the
+T3D (Twin Delayed Deep Deterministic Policy Gradient Algorithm)  is an Deep Reinforcment Learning algorithm which concurrently learns a Q-function and a policy. It uses Actor Critic approach where Actor function specifies action given the
 current state of the environments. Critic value function specifies a signal (TD
 Error) to criticize the actions made by the actor.
 
@@ -25,6 +24,10 @@ iv. Two Target network for Critic
 
 Also, this algorithm uses time delay for updating Actor after a certain number of iterations. Also, Target Actor and Critic networks are updated periodically after certain number of iterations using Polyak averaging.
 
+There are two objectives of the algorithm:
+i. Minimize the Critic loss which is sum of mean squared error between Q value of target Critic and the the two Critics. Here Gradient descend is used
+ii. Maximize the performance of Actor. Here Gradient ascent is used
+
 I will draw an analogy with an real world exmaple. 
 
 Let us say an child is trying to learn walking by and his parents are helping him to learn by giving feedback like clapping every time he is successfully standup.
@@ -33,7 +36,16 @@ Let us say an child is trying to learn walking by and his parents are helping hi
 
 Here 
 
-Actor is the child who is learning to walking by looking his condition and the environment.
+Actor is the child who is instantly learning actions based on various states. Actor target is the permanent learning of policy by the child
+
+Two Critics are Parents i.e. Father and Mother who are evaluating the performances of Child and giving him Thumbs up or (or say chocolates) if the child succeeds or give him solace if he fails.
+
+Critic targets are the permanent learnings by parent.
+
+Actor (child) gets positive rewards from environment (like chocolates or thumbs up from parent) and negative reward when he fell down and gets pain
+
+![Kid learning ](/thumbs_up.jfif.jfif)
+
 
 
 
@@ -55,8 +67,9 @@ ii. Sample : This method is used randomly selecting as a list of transition of b
 
 ## Step2: Define Actor Model
 
-Actor model is a neural network which takes input as state and outputs the action
-Target Actor model is neural network which is similar to Actor model but it is updated less frequently and mainly used for stability
+Actor model is a neural network which takes input as state and outputs the action. This is updated using backpropagation.
+Target Actor model is neural network which is similar to Actor model but it is updated less frequently and mainly used for stability. 
+Target Actor Model is updated using Polyak averaging from the Actor model
 
 Worflow for Actor forward is as below:
 ![Actor Model](/Actor.forward.png)
