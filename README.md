@@ -46,6 +46,16 @@ Actor (child) gets positive rewards from environment (like chocolates or thumbs 
 
 ![Kid learning ](/thumbs_up.jfif)
 
+Experience replay contain various experiences of Child like Successfully standup, Fell down etc
+
+![Kid learning standup](/standup_successful.jfif)
+![Kid learning fell down](/fell_down.jfif)
+
+
+Objective is :
+i. Parents (i.e. Critics) should make less mistakes i.e. minimize critic loss
+ii. Child should try to get better performance i.e. more number of successes in walking
+
 
 
 
