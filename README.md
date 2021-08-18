@@ -86,7 +86,7 @@ Actor model is a neural network which takes input as state and outputs the actio
 Target Actor model is neural network which is similar to Actor model but it is updated less frequently and mainly used for stability. 
 Target Actor Model is updated using Polyak averaging from the Actor model
 
-Worflow for Actor forward is as below:
+Workflow for Actor forward is as below:
 ![Actor Model](/Actor.forward.png)
 
 ## Step3: Define Critic Model
