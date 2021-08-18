@@ -1,7 +1,4 @@
-# Twin Delayed Deep Determistic algorithm
-TD3 algorithm
-
-Note: T3D.ipynb in the repository is the Jupyter Notebook in Google Collab for the given code
+# Twin Delayed Deep Determistic (TD3) algorithm
 
 # TD3 Algorithm
 
