@@ -1,11 +1,11 @@
-# P2_S9
-Phase2 Assignment 9 - T3D algorithm
+# Twin Delayed Deep Determistic algorithm
+TD3 algorithm
 
 Note: T3D.ipynb in the repository is the Jupyter Notebook in Google Collab for the given code
 
-# T3D Algorithm
+# TD3 Algorithm
 
-T3D (Twin Delayed Deep Deterministic Policy Gradient Algorithm)  is an Deep Reinforcment Learning algorithm which concurrently learns a Q-function and a policy. It uses Actor Critic approach where Actor function specifies action given the
+TD3 (Twin Delayed Deep Deterministic Policy Gradient Algorithm)  is an Deep Reinforcment Learning algorithm which concurrently learns a Q-function and a policy. It uses Actor Critic approach where Actor function specifies action given the
 current state of the environments. Critic value function specifies a signal (TD
 Error) to criticize the actions made by the actor.
 
@@ -13,12 +13,12 @@ T3D uses experience replay where experience tuples (S,A,R,S`) are added to
 replay buffer and are randomly sampled from the replay buffer so that samples
 are not correlated.
 
-T3D also uses separate target neural network for both Actor and Critic. As
+TD3 also uses separate target neural network for both Actor and Critic. As
 target values are determined for both the critic and actor networks, copy of both
 of these networks and soft update their weights are periodically updated to the
 respective target networks.
 
-There are six neural networks used in T3D
+There are six neural networks used in TD3
 i. Local network for Actor
 ii. Target network for Actor
 iii. Two networks for Critic
@@ -63,7 +63,7 @@ ii. Child should try to get better performance i.e. more number of successes in 
 
 
 
-Step by step of T3D algorithm. 
+Step by step of TD3 algorithm. 
 
 ## Step0: Initialization
 
@@ -104,13 +104,13 @@ The flowchart for Q1 is as below:
 
 ## Step4 -Step 15
 
-T3D is the main class which performs T3D algorithm 
+TD3 is the main class which performs TD3 algorithm 
 
 __init__ method is used for initializing actor, target actor, critic1, critic2, critic1 target, critic2 taret.
 Flowchart for __init__ method of T3D is as below:
 ![T3D class](/T3D.init.png)
 
-train method of T3D class is used for trainig T3D algorithm. This is the main method for training
+train method of TD3 class is used for trainig TD3 algorithm. This is the main method for training
 Flowchart for train method of T3D is as below:
 ![T3D train](/T3D.Train.png)
 
